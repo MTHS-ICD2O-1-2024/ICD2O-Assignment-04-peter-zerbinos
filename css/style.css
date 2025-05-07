@@ -1,4 +1,76 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
+/* Created by: Peter Zerbinos
+* Created on: May 2025
 * This file contains the CSS for index.html
 */
+
+.mdl-layout__header-row {
+  justify-content: center;
+  padding: 0;
+}
+
+.mdl-layout__content {
+  padding-left: 15pt;
+  padding-right: 15pt;
+  padding-top: 15pt;
+}
+
+.mdl-textfield__error {
+  color: lightgreen;
+}
+
+h1 {
+  color: rgb(255, 208, 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+.page-content {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+body {
+  background-color: rgb(167, 39, 39);
+}
+
+img {
+  float: right;
+  height: 200px;
+}
+
+/* Root Variables for Easy Customization */
+:root {
+  --primary-bg: rgb(167, 39, 39);
+  --secondary-color: rgba(255, 208, 0, 0.651);
+  --text-color: white;
+  --button-bg: rgb(255, 208, 0);
+  --button-text: black;
+}
+
+/* Universal Styling */
+html,
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--primary-bg);
+}
+
+/* Page Content */
+.page-content {
+  color: var(--text-color);
+  font-size: 1.25rem;
+}
+
+/* Buttons */
+.mdl-button {
+  background-color: var(--button-bg) !important;
+  color: var(--button-text) !important;
+}
+
+/* Drop-down Selects */
+.mdl-textfield__input {
+  background-color: var(--secondary-color);
+  color: black;
+}
