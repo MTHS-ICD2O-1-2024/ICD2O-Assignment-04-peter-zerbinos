@@ -39,9 +39,6 @@ function calculateMovieCost() {
   }
 
   // total cost
-  const subtotal = ticketPrice + popcornPrice + drinkPrice;
-  const totalCost = subtotal * tax;
-  document.getElementById('result').innerHTML = 
-  "<p>The subtotal of your movie experience is: $" + subtotal.toFixed(2) + ".</p>" +
-  "<p>The total cost of your movie experience (including tax) is: $" + totalCost.toFixed(2) + ".</p>";
+  const totalCost = (ticketPrice + popcornPrice + drinkPrice) * tax;
+  document.getElementById('result').innerHTML = "<p>The total cost of your movie experience is: $" + totalCost.toFixed(2) + ". </p>";
 }
